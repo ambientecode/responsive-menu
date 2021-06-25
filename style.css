@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.d-block {
+    display: flex !important;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.navigation {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation .brand img {
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation .btn-responsive-menu {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.navigation ul.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.navigation ul li, .header ul li {
+    list-style: none;
+}
+
+.header ul.responsive-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header ul.responsive-menu li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.header ul.responsive-menu li a {
+    padding: 10px 20px;
+    border-top: 2px solid #63e1e6;
+    width: 36%;
+    text-align: center;
+    transition: 0.6s;
+    font-weight: 600;
+}
+
+.header ul.menu li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header ul.menu li a {
+    padding: 10px 20px;
+    border-bottom: 2px solid #63e1e6;
+    width: 36%;
+    text-align: center;
+    transition: 0.6s;
+    font-weight: 600;
+}
+
+.header ul.responsive-menu {
+    display: none;
+}
+
+.header ul li a:hover {
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+@media screen and (max-width: 876px) {
+    .navigation ul.menu {
+        display: none;
+    }
+
+    .navigation .btn-responsive-menu {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 876px) {
+    .navigation ul.menu {
+        display: flex;
+    }
+
+    .navigation .btn-responsive-menu {
+        display: none;
+    }
+
+    .header ul.responsive-menu {
+        display: none !important;
+    }
+}
